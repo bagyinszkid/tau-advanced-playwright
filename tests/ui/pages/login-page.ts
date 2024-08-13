@@ -10,7 +10,7 @@ class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.loginButton = page.getByRole('button', { name: 'Login' });
+    this.loginButton = page.getByRole('button', { name: 'login' }); //Does it matter that it was 'Login instead of 'login' ? 
     this.messagePanel = page.locator('#output');
     this.password = page.getByPlaceholder('Password');
     this.userName = page.getByPlaceholder('UserName');
